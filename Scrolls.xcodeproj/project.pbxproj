@@ -13,6 +13,7 @@
 		2723352719D9909D00F6FD24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2723352619D9909D00F6FD24 /* Images.xcassets */; };
 		2723352A19D9909D00F6FD24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2723352819D9909D00F6FD24 /* LaunchScreen.xib */; };
 		2723353619D9909D00F6FD24 /* ScrollsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723353519D9909D00F6FD24 /* ScrollsTests.swift */; };
+		274D65D819D9AF0600B23176 /* ss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274D65D719D9AF0600B23176 /* ss@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2723352F19D9909D00F6FD24 /* ScrollsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2723353419D9909D00F6FD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2723353519D9909D00F6FD24 /* ScrollsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollsTests.swift; sourceTree = "<group>"; };
+		274D65D719D9AF0600B23176 /* ss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ss@2x.png"; path = "../ss@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2723351C19D9909C00F6FD24 /* Scrolls */ = {
 			isa = PBXGroup;
 			children = (
+				274D65D719D9AF0600B23176 /* ss@2x.png */,
 				2723351F19D9909C00F6FD24 /* AppDelegate.swift */,
 				2723352119D9909C00F6FD24 /* ViewController.swift */,
 				2723352319D9909D00F6FD24 /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				2723352519D9909D00F6FD24 /* Main.storyboard in Resources */,
 				2723352A19D9909D00F6FD24 /* LaunchScreen.xib in Resources */,
 				2723352719D9909D00F6FD24 /* Images.xcassets in Resources */,
+				274D65D819D9AF0600B23176 /* ss@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				2723353B19D9909D00F6FD24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2723353C19D9909D00F6FD24 /* Build configuration list for PBXNativeTarget "ScrollsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				2723353E19D9909D00F6FD24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

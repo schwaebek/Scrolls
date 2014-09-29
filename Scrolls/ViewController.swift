@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
+
+    var imageView = UIImageView(image: UIImage(named: "ss"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,16 +18,41 @@ class ViewController: UIViewController {
         
         var scrollView = UIScrollView(frame: self.view.frame)
         self.view.addSubview(scrollView)
-        scrollView.contentSize = CGSizeMake(280 * 10 + 20, 568)
-        scrollView.pagingEnabled = true
+        scrollView.contentSize = CGSizeMake(640, 568)
         
-        for i in 0...9 {
-            var x = CGFloat(300 * i + 20)
-            var blueBox = UIView(frame: CGRectMake(x, 20, 280, 528))
-            blueBox.backgroundColor = UIColor.blueColor()
-            scrollView.addSubview(blueBox)
+        for i in 0...1 {
+            var subScrollView = UIScrollView(frame: self.view.frame)
+            subScrollView.frame.origin.x = CGFloat(320 * i)
+            subScrollView.contentSize = CGSizeMake(320, 1136)
+            subScrollView.pagingEnabled = true
+            scrollView.addSubview(subScrollView)
+            
+            for i in 0...1 {
+                var y = CGFloat(568 * i)
+                var blueBox = UIView(frame: CGRectMake(0, y, 320, 568))
+                
+                blueBox.backgroundColor = UIColor(white: CGFloat (arc4random_uniform(100)) / 100.0, alpha: 1.0)
+                subScrollView.addSubview(blueBox)
+
+                
+            }
             
         }
+//        scrollView.pagingEnabled = true
+//        scrollView.maximumZoomScale = 2.0
+//        scrollView.zoomScale = 2.0
+//        scrollView.delegate = self
+//        
+//        
+//        scrollView.addSubview(imageView)
+        
+        
+//        for i in 0...9 {
+//
+//        }
+    }
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
 
     override func didReceiveMemoryWarning() {
